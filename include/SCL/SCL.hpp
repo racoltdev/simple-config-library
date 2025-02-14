@@ -61,7 +61,7 @@ namespace scl {
 
 				//function to split a string into two pieces around a phrase
 				static std::vector<std::string> split(std::string s, std::string phrase) {
-					int pos = s.find(phrase);
+					size_t pos = s.find(phrase);
 					if (pos != std::string::npos) {
 						std::vector<std::string> out;
 						out.push_back(s.substr(0, pos));
